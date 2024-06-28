@@ -1,2 +1,2 @@
-# main
-Main repository for Plate Lab 
+# Main 
+This repository contains general lab code, workflows, guides, etc.
