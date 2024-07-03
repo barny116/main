@@ -126,7 +126,7 @@ filter.NA <- function(df, points = 3){
 }               #filter for minimum # of points per observation
 medNorm <- function(df, samples = Run, 
                     values = Precursor.Normalised) { 
-  df %>%                                                 #take your specified data.frame
+  df %>% data.frame() %>%                                #take your specified data.frame
     mutate(global_median = median({{ values }},          #calculate the global median
                                   na.rm = TRUE)) %>% 
     group_by({{ samples }}) %>%                          #group by sample name
